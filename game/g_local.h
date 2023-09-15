@@ -3459,6 +3459,8 @@ extern vmCvar_t		g_waitForAFKThreshold;
 extern vmCvar_t		g_waitForAFKThresholdTroll;
 extern vmCvar_t		g_waitForAFKMinPlayers;
 extern vmCvar_t		g_printCountry;
+// tdm
+extern vmCvar_t    g_largeShieldRespawnTime;
 extern vmCvar_t		g_redirectWrongThTeBinds;
 
 int validateAccount(const char* username, const char* password, int num);
