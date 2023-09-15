@@ -56,7 +56,7 @@ static	vec3_t	muzzle;
 // Heavy Repeater
 //----------
 #define REPEATER_SPREAD				1.2f // was 1.4
-#define	REPEATER_DAMAGE				18		//was 14
+#define	REPEATER_DAMAGE				14
 #define	REPEATER_VELOCITY			2000 	//was 1600
 
 #define REPEATER_ALT_SIZE				3	// half of bbox size
@@ -97,7 +97,7 @@ static	vec3_t	muzzle;
 #define	ROCKET_SPLASH_DAMAGE		100
 #define	ROCKET_SPLASH_RADIUS		160
 #define ROCKET_SIZE					3
-#define	ROCKET_ALT_VELOCITY			600
+#define	ROCKET_ALT_VELOCITY			550
 #define ROCKET_ALT_THINK_TIME		100
 
 // Concussion Rifle
