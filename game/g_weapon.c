@@ -97,7 +97,7 @@ static	vec3_t	muzzle;
 #define	ROCKET_SPLASH_DAMAGE		100
 #define	ROCKET_SPLASH_RADIUS		160
 #define ROCKET_SIZE					3
-#define	ROCKET_ALT_VELOCITY			550
+#define	ROCKET_ALT_VELOCITY			600
 #define ROCKET_ALT_THINK_TIME		100
 
 // Concussion Rifle
@@ -700,8 +700,8 @@ static void WP_FireBlaster( gentity_t *ent, qboolean altFire )
 		// add some slop to the alt-fire direction
 		angs[PITCH] += crandom() * BLASTER_SPREAD;
 		angs[YAW]	+= crandom() * BLASTER_SPREAD;
-		int velocity	= BLASTER_VELOCITY;
-		int damage	= BLASTER_DAMAGE;
+		velocity	= BLASTER_VELOCITY;
+		damage	= BLASTER_DAMAGE;
 	}
 
 	AngleVectors( angs, dir, NULL, NULL );
@@ -2253,12 +2253,12 @@ void rocketThink( gentity_t *ent )
 		else if ( dot < 0.70f )
 		{	
 			// Still a bit off, so we turn a bit softer
-			VectorMA( ent->movedir, 0.25f*newDirMult, targetdir, newdir ); // was 0.5f
+			VectorMA( ent->movedir, 0.5f*newDirMult, targetdir, newdir ); // was 0.5f thinking
 		}
 		else
 		{	
 			// getting close, so turn a bit harder
-			VectorMA( ent->movedir, 0.45f*newDirMult, targetdir, newdir ); // was 0.9f
+			VectorMA( ent->movedir, 0.9f*newDirMult, targetdir, newdir ); // was 0.9f thinking
 		}
 
 		// add crazy drunkenness
