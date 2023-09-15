@@ -1167,7 +1167,7 @@ static cvarTable_t		gameCvarTable[] = {
 
 	{ &g_printCountry, "g_printCountry", "1", CVAR_ARCHIVE, 0, qtrue },
 	// tdm
-	{ &g_largeShieldRespawnTime, "g_largeShieldRespawnTime", 30, CVAR_ARCHIVE, 0, qtrue }
+	{ &g_largeShieldRespawnTime, "g_largeShieldRespawnTime", "30", CVAR_ARCHIVE, 0, qtrue }
 	{ &g_redirectWrongThTeBinds, "g_redirectWrongThTeBinds", "1", CVAR_ARCHIVE, 0, qtrue },
 };
 
