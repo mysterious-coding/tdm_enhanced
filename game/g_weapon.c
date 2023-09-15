@@ -1931,7 +1931,7 @@ static void WP_FlechetteMainFire( gentity_t *ent )
 		vectoangles( forward, angs );
 
 		if ( g_flechetteSpread.integer ) {
-			switch ( i ) {
+			switch ( (i % 4) + 1 ) {
 				case 1:
 					angs[PITCH] -= random() * FLECHETTE_SPREAD;
 					angs[YAW] -= random() * FLECHETTE_SPREAD;
