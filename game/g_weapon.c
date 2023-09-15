@@ -700,8 +700,6 @@ static void WP_FireBlaster( gentity_t *ent, qboolean altFire )
 		// add some slop to the alt-fire direction
 		angs[PITCH] += crandom() * BLASTER_SPREAD;
 		angs[YAW]	+= crandom() * BLASTER_SPREAD;
-		velocity	= BLASTER_VELOCITY;
-		damage	= BLASTER_DAMAGE;
 	}
 
 	AngleVectors( angs, dir, NULL, NULL );
